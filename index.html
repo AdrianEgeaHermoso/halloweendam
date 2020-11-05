@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esto es Halloween</title>
+    <link rel="shortcut icon" href="imagenes/favicon-32x32.png" type="image/x-icon">
+    <!--El estilo esta fuera y se enlaza con la etiqueta link-->
+    <link rel="stylesheet" href="estilos/halloween.css">
+
+    <!--Las funciones de Js estan fuera y las enlazo con src-->
+    <script src="javascripts/halloween.js">
+    </script>
+
+</head>
+<body onload="sonar('nana')"><!--El evento que hace sonar la nana es
+                                cargar la página. Sonar es una funcion de javascript que voy a definir en la zona de script-->
+    <div id="wrapper">
+            <audio src="sonidos/lullaby.mp3" id="nana" controls>
+                </audio><!--Sonido de fondo-->
+            <audio src="sonidos/wolf2.mp3" id="aullido">
+                </audio><!--Sonido de aullido lobo-->
+            <audio src="sonidos/grito.mp3" id="grito">
+                </audio><!--Sonido grito Woman-->
+                <audio src="sonidos/dracula.mp3" id="dracula">
+                </audio><!--Sonido Dracula-->
+        <h2 id="titulo">Elige CompiHalloween Con Doble Click</h2>
+        <img id="momiagif" src="imagenes/momias.gif">
+        <div id="momia" ondblclick="mostrar('momiagif')" onclick="ocultar('momiagif')"></div>
+        <img id="lobogif" src="imagenes/lobo.gif">
+        <div id="lobo" ondblclick="mostrar('lobogif');sonar('aullido')" onclick="ocultar('lobogif');parar('aullido')"></div>
+        <img id="invisiblegif" src="imagenes/invisible.gif">
+        <div id="invisible" ondblclick="mostrar('invisiblegif')" onclick="ocultar('invisiblegif')"></div>
+        <img id="draculagif" src="imagenes/dracula.gif">
+        <div id="dracula" ondblclick="mostrar('draculagif')" onclick="ocultar('draculagif')"></div>
+        <img id="frankigif" src="imagenes/frankenstein.gif">
+        <div id="franki" ondblclick="mostrar('frankigif')" onclick="ocultar('frankigif')"></div>
+        <img id="womangif" src="imagenes/frankenwoman.gif">
+        <div id="woman" ondblclick="mostrar('womangif');sonar('grito')" onclick="ocultar('womangif');parar('grito')"></div>
+        <img id="jorobadogif" src="imagenes/jorobado.gif">
+        <div id="jorobado" onmouseover="mostrar('jorobadogif')" onclick="ocultar('jorobadogif')"></div>
+        <img id="pantanogif" src="imagenes/pantano.gif">
+        <div id="pantano" ondblclick="mostrar('pantanogif')" onclick="ocultar('pantanogif')"></div>
+    </div>
+</body>
+</html>

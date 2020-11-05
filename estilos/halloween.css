@@ -1,0 +1,128 @@
+/* HOJA DE ESTILO DE LA PRESENTACIÓN DE HALLOWEEN*/
+/* CURSO 2020/21 */
+/* 1º DAM */
+
+
+@font-face {
+    font-family: halloween2;
+    src: url(tipografias/halloween2.ttf);
+}
+body{background-color: black;}
+#wrapper{position: relative;
+    background-image: url(../imagenes/monstruos.png);
+    margin: auto;
+    width: 1440px;
+    height:900px;}
+#titulo{position: absolute;
+        top:-20px;
+        left:80px;
+        color:#665566;
+        font-family: halloween2;
+        font-size: 2em;
+        text-shadow: 3px 3px 3px #FFFFFF;}
+#invisiblegif{position: absolute;
+        top:70px;
+        width:250px;
+        height:300px;
+        left:170px;
+        visibility: hidden;}
+#invisible{position:absolute;
+        top:60px;
+        left:180px;
+        width:250px;
+        height:335px;
+        cursor:pointer;
+        /*border:1px solid white;*/}       
+#momiagif{position: absolute;
+        top:520px;
+        width:300px;
+        height:300px;
+        left:70px;
+        visibility: hidden;}
+#momia{position:absolute;
+        top:400px;
+        left:70px;
+        width:300px;
+        height:500px;
+        cursor:pointer;
+        /*border:1px solid white;*/}
+#lobogif{position: absolute;
+        top:600px;
+        width:300px;
+        height:300px;
+        left:590px;
+        visibility: hidden;}
+#lobo{position:absolute;
+        top:500px;
+        left:590px;
+        width:250px;
+        height:400px;
+        cursor:pointer;
+        /*border:1px solid white;*/}
+#draculagif{position: absolute;
+        top:50px;
+        width:300px;
+        height:300px;
+        left:590px;
+        visibility: hidden;}
+#dracula{position:absolute;
+        top:0px;
+        left:590px;
+        width:230px;
+        height:450px;
+        cursor:pointer;
+        /*border:1px solid white;*/}
+#frankigif{position: absolute;
+        top:400px;
+        width:210px;
+        height:300px;
+        left:370px;
+        visibility: hidden;}
+#franki{position:absolute;
+        top:400px;
+        left:370px;
+        width:220px;
+        height:500px;
+        cursor:pointer;
+        /*border:1px solid white;*/}
+#womangif{position: absolute;
+        top:400px;
+        width:170px;
+        height:300px;
+        left:840px;
+        visibility: hidden;}
+#woman{position:absolute;
+        top:370px;
+        left:840px;
+        width:170px;
+        height:530px;
+        cursor:pointer;
+        /*border:1px solid white;*/}
+#jorobadogif{position: absolute;
+        top:390px;
+        width:300px;
+        height:350px;
+        left:1020px;
+        visibility: hidden;}
+#jorobado{position:absolute;
+        top:370px;
+        left:1020px;
+        width:300px;
+        height:530px;
+        cursor:pointer;
+        /*border:1px solid white;*/}
+#pantanogif{position: absolute;
+        top:20px;
+        width:350px;
+        height:350px;
+        left:900px;
+        visibility: hidden;}
+#pantano{position:absolute;
+        top:20px;
+        left:900px;
+        width:360px;
+        height:350px;
+        cursor:pointer;
+        /*border:1px solid white;*/}
+#nana{position: absolute;
+        left:1300px;}
