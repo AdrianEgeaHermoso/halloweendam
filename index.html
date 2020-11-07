@@ -13,34 +13,48 @@
     </script>
 
 </head>
-<body onload="sonar('nana')"><!--El evento que hace sonar la nana es
+<body onload="sonar('nana')"><!--El evento que hace sonar ambientacion de fondo al
                                 cargar la página. Sonar es una funcion de javascript que voy a definir en la zona de script-->
     <div id="wrapper">
-            <audio src="sonidos/lullaby.mp3" id="nana" controls>
-                </audio><!--Sonido de fondo-->
+
+            <audio src="sonidos/universal.mp3" id="universal" controls>
+                </audio><!--Sonido de fondo con un display para poder iniciar o detener el sonido de fondo-->
             <audio src="sonidos/wolf2.mp3" id="aullido">
                 </audio><!--Sonido de aullido lobo-->
             <audio src="sonidos/grito.mp3" id="grito">
                 </audio><!--Sonido grito Woman-->
-                <audio src="sonidos/dracula.mp3" id="dracula">
+            <audio src="sonidos/dracula.mp3" id="dracul">
                 </audio><!--Sonido Dracula-->
-        <h2 id="titulo">Elige CompiHalloween Con Doble Click</h2>
+            <audio src="sonidos/nadiemequiere.mp3" id="nadiemequiere">
+                </audio><!--Sonido Jorobado-->
+            <audio src="sonidos/pantano.mp3" id="pantanoso">
+            </audio><!--Sonido de monstruo del pantano-->
+            <audio src="sonidos/risachuky.mp3" id="risitas">
+            </audio><!--Sonido de risa del hombre invisible-->
+            <audio src="sonidos/mummy.mp3" id="mummy">
+            </audio><!--Sonido Momia-->
+            <audio src="sonidos/franky.mp3" id="franky">
+            </audio><!--Sonido de Frankenstein-->
+
+
+        <h2 id="titulo">Elige CompiHalloween con Doble Click</h2>
+
         <img id="momiagif" src="imagenes/momias.gif">
-        <div id="momia" ondblclick="mostrar('momiagif')" onclick="ocultar('momiagif')"></div>
+        <div id="momia" ondblclick="mostrar('momiagif');sonar('mummy')" onclick="ocultar('momiagif');parar('mummy')"></div>
         <img id="lobogif" src="imagenes/lobo.gif">
         <div id="lobo" ondblclick="mostrar('lobogif');sonar('aullido')" onclick="ocultar('lobogif');parar('aullido')"></div>
         <img id="invisiblegif" src="imagenes/invisible.gif">
-        <div id="invisible" ondblclick="mostrar('invisiblegif')" onclick="ocultar('invisiblegif')"></div>
+        <div id="invisible" ondblclick="mostrar('invisiblegif');sonar('risitas')" onclick="ocultar('invisiblegif');parar('risitas')"></div>
         <img id="draculagif" src="imagenes/dracula.gif">
-        <div id="dracula" ondblclick="mostrar('draculagif')" onclick="ocultar('draculagif')"></div>
+        <div id="dracula" ondblclick="mostrar('draculagif');sonar('dracul')" onclick="ocultar('draculagif');parar('dracul')"></div>
         <img id="frankigif" src="imagenes/frankenstein.gif">
-        <div id="franki" ondblclick="mostrar('frankigif')" onclick="ocultar('frankigif')"></div>
+        <div id="franki" ondblclick="mostrar('frankigif');sonar('franky')" onclick="ocultar('frankigif');parar('franky')"></div>
         <img id="womangif" src="imagenes/frankenwoman.gif">
         <div id="woman" ondblclick="mostrar('womangif');sonar('grito')" onclick="ocultar('womangif');parar('grito')"></div>
         <img id="jorobadogif" src="imagenes/jorobado.gif">
-        <div id="jorobado" onmouseover="mostrar('jorobadogif')" onclick="ocultar('jorobadogif')"></div>
+        <div id="jorobado" onmouseover="mostrar('jorobadogif');sonar('nadiemequiere')" onclick="ocultar('jorobadogif');parar('nadiemequiere')"></div>
         <img id="pantanogif" src="imagenes/pantano.gif">
-        <div id="pantano" ondblclick="mostrar('pantanogif')" onclick="ocultar('pantanogif')"></div>
+        <div id="pantano" ondblclick="mostrar('pantanogif');sonar('pantanoso')" onclick="ocultar('pantanogif');parar('pantanoso')"></div>
     </div>
 </body>
 </html>

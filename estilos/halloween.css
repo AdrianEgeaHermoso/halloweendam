@@ -15,7 +15,7 @@ body{background-color: black;}
     height:900px;}
 #titulo{position: absolute;
         top:-20px;
-        left:80px;
+        left:15px;
         color:#665566;
         font-family: halloween2;
         font-size: 2em;
@@ -113,9 +113,9 @@ body{background-color: black;}
         /*border:1px solid white;*/}
 #pantanogif{position: absolute;
         top:20px;
-        width:350px;
+        width:300px;
         height:350px;
-        left:900px;
+        left:1000px;
         visibility: hidden;}
 #pantano{position:absolute;
         top:20px;
@@ -124,5 +124,5 @@ body{background-color: black;}
         height:350px;
         cursor:pointer;
         /*border:1px solid white;*/}
-#nana{position: absolute;
+#universal{position: absolute;
         left:1300px;}
